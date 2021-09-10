@@ -1,0 +1,15 @@
+ 
+  <article class="single-tour">
+    <img [src]="tour?.image" alt="" srcset="">
+    <footer>
+      <div class="tour-info">
+        <h4>{{tour?.name}}</h4>
+        <h4 class="tour-price">${{tour?.price}}</h4>
+      </div>
+      <p >
+        {{readMore? tour?.info:tour?.info?.substring(0,200)}}
+        <button (click)="showMore()">{{readMore?'show less':"show More"}}</button>
+      </p>
+    </footer>
+   </article>
+ 
