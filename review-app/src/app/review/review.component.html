@@ -1,0 +1,20 @@
+<article class="review">
+  <div class="img-container">
+    <img class="person-img" src="{{reviews[index].image}}">
+    <fa-icon class="quote-icon" [icon]="quotIcon"></fa-icon>
+  </div>
+  <h4 class="author">{{reviews[index].name}}</h4>
+  <p class="job">{{reviews[index].job}}</p>
+  <p class="info">{{reviews[index].text}}</p>
+  <div class="button-container">
+    <button (click)="prevPerson()" class="prev-btn">
+      <fa-icon [icon]="chevronLeft">
+      </fa-icon>
+    </button>
+    <button (click)="nextPerson()" class="next-btn">
+      <fa-icon [icon]="chevronRight">
+      </fa-icon>
+    </button>
+  </div>
+  <button class="random-btn" (click)="randonPerson()">Surprise Me</button>
+</article>
