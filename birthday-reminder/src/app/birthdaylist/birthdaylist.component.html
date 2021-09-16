@@ -1,0 +1,6 @@
+<h3>{{people.length}} birthdays today.</h3>
+
+<app-birthday *ngFor="let person of people" [person]="person"
+></app-birthday>
+
+<button (click)="clearPerson()" >Clear All</button>
