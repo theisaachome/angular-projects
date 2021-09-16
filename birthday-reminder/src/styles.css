@@ -6,6 +6,12 @@ Variables
 ===============
 */
 
+/*
+=============== 
+Variables
+===============
+*/
+
 :root {
   /* dark shades of primary color*/
   --clr-primary-1: hsl(162, 61%, 89%);
@@ -43,9 +49,7 @@ Variables
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   --max-width: 1170px;
   --fixed-width: 450px;
-  /* --clr-pink: #f28ab2; */
-
-  --clr-pink: #604751;
+  --clr-pink: #322e2f;
 }
 /*
 =============== 
@@ -53,6 +57,7 @@ Global Styles
 ===============
 */
 
+*,
 ::after,
 ::before {
   margin: 0;
@@ -94,7 +99,10 @@ h3 {
 h4 {
   font-size: 0.875rem;
 }
-
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 4rem;
@@ -111,23 +119,18 @@ h4 {
   body {
     font-size: 1rem;
   }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
 }
 
 /* global classes */
 
 /* section */
 
-.section {
-  width: 90vw;
-  margin: auto;
-  max-width: var(--max-width);
-}
-
-@media screen and (min-width: 992px) {
-  .section {
-    width: 95vw;
-  }
-}
 main {
   min-height: 100vh;
   display: flex;
