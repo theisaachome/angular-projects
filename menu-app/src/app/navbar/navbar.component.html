@@ -1,0 +1,36 @@
+<nav>
+  <div class="nav-center">
+    <div class="nav-header">
+      <img class="logo" src="../../favicon.ico" alt="">
+      <button (click)="showLinks = !showLinks" class='nav-toggle'>
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <div #getHeight *ngIf="showLinks" [ngClass]="{'show-container':showLinks}" class="link-container">
+      <ul class="links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">projects</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">profile</a></li>
+      </ul>
+
+      Height of above tag : {{ getHeight.offsetHeight }}
+    </div>
+    <ul class="social-icons">
+      <li><a href="https://www.facebook.com">
+          <i class="fab fa-facebook"></i></a></li>
+      <li><a href="https://www.twitter.com">
+          <i class="fab fa-twitter"></i>
+        </a></li>
+      <li><a href="https://www.linkedin.com">
+
+          <i class="fab fa-linkedin"></i>
+        </a></li>
+      <li><a href="https://www.instagram.com">
+          <i class="fab fa-instagram"></i>
+        </a></li>
+    </ul>
+
+  </div>
+</nav>

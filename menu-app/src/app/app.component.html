@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+<main>
+  <section class="menu section">
+    <div class="title">
+      <h2>Our Menu</h2>
+      <div class="underline"></div>
+    </div>
+    <app-category (selecteCategory)="selectedCategory=$event" [categories]="getCategories()"></app-category>
+    <app-menu [menuItem]="filterItems(selectedCategory)"></app-menu>
+  </section>
+</main>
